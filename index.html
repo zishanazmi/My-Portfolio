@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- --------- UNICONS ---------- -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <!-- --------- CSS ---------- -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- --------- FAVICON ---------- -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+  <title>Portfolio | Ludiflex</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .con {
+      width: 170vmin;
+      left: 50%;
+      top: 120px;
+      background-color: #ffffff;
+      box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .tabs {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .h3 {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 15px 0;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .tab-content {
+      background-color: #ffffff;
+      padding: 50px 40px;
+    }
+
+    .tab-content h4 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #000224;
+      font-weight: 600;
+    }
+
+    .tab-content p {
+      text-align: justify;
+      line-height: 1.9;
+      letter-spacing: 0.4px;
+      color: #202238;
+    }
+
+    .tab-content div {
+      display: none;
+    }
+
+    .tab-content .active {
+      display: block;
+    }
+
+    .tabs .active {
+      background-color: rgb(110, 87, 224);
+      color: #ffffff;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .con {
+        width: 120vmin;
+        left: 50%;
+        top: 120px;
+        background-color: #ffffff;
+        box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .tabs {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    @media only screen and (max-width: 900px) {
+
+      .con {
+        width: 120vmin;
+        left: 50%;
+        top: 120px;
+        background-color: #ffffff;
+        box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .tabs {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      .image,
+      .image img {
+        width: 190px;
+        height: 228px;
+      }
+    }
+
+    @media only screen and (max-width: 540px) {
+
+      .con {
+        width: 90vmin;
+        left: 50%;
+        top: 120px;
+        background-color: #ffffff;
+        box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .tabs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- --------------- HEADER --------------- -->
+    <nav id="header">
+      <div class="nav-logo">
+        <p class="nav-name">Jishaan</p>
+        <span>.</span>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list">
+            <a href="#home" class="nav-link active-link">Home</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#about" class="nav-link">About</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#projects" class="nav-link">Projects</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#contact" class="nav-link">Contact</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <a href="assets/images/Mohd Jishaan Azmi Resume.pdf" target="blank_" download>
+          <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+        </a>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+      <!-- -------------- FEATURED BOX ---------------- -->
+      <section class="featured-box" id="home">
+        <div class="featured-text">
+          <div class="featured-text-card">
+            <span>Jishaan Azmi</span>
+          </div>
+          <div class="featured-name">
+            <p>I'm <span class="typedText"></span></p>
+          </div>
+          <div class="featured-text-info">
+            <p>Experienced frontend developer with a passion for creating visually stunning
+              and user-friendly websites.
+            </p>
+          </div>
+          <div class="featured-text-btn">
+            <button class="btn blue-btn">Hire Me</button>
+            <a href="assets/images/Mohd Jishaan Azmi Resume.pdf" target="blank_" download>
+              <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </a>
+          </div>
+          <div class="social_icons">
+            <a href="https://www.instagram.com/zishan48__/" target="blank_">
+              <div class="icon"><i class="uil uil-instagram"></i></div>
+            </a>
+            <a href="https://www.linkedin.com/in/jishaan-azmi/" target="blank_">
+              <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCy-NtGgYWWdZsVgaB7vl_ag" target="blanck_">
+              <div class="icon"><i class="uil uil-youtube"></i></div>
+            </a>
+            <a href="https://github.com/zishanazmi/zishanazmi" target="blank_">
+              <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </a>
+          </div>
+        </div>
+        <div class="featured-image">
+          <div class="image">
+            <img src="assets/images/avatar.png" alt="avatar">
+          </div>
+        </div>
+        <div class="scroll-icon-box">
+          <a href="#about" class="scroll-btn">
+            <i class="uil uil-mouse-alt"></i>
+            <p>Scroll Down</p>
+          </a>
+        </div>
+
+      </section>
+      <!-- -------------- ABOUT BOX ---------------- -->
+      <section class="section" id="about">
+        <div class="top-header">
+          <h1>About Me</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="about-info">
+              <h3>My introduction</h3>
+              <p>I am a passionate and skilled web developer with expertise in both
+                frontend and backend technologies.
+                My experience includes creating dynamic, user-centric websites, such as a
+                dynamic certificate generator and a stock photo website,
+                using HTML, CSS, JavaScript, PHP, SQL, and the fPDF library.
+              </p>
+              <div class="about-btn">
+                <a href="assets/images/Mohd Jishaan Azmi Resume.pdf" target="blank_" download>
+                  <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skills-box">
+              <div class="skills-header">
+                <h3>Frontend</h3>
+              </div>
+              <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Django</span>
+              </div>
+            </div>
+            <div class="skills-box">
+              <div class="skills-header">
+                <h3>Backend</h3>
+              </div>
+              <div class="skills-list">
+                <span>PHP</span>
+                <span>JAVA</span>
+                <span>Python</span>
+                <span>C++</span>
+              </div>
+            </div>
+            <div class="skills-box">
+              <div class="skills-header">
+                <h3>Database</h3>
+              </div>
+              <div class="skills-list">
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+                <span>FireBase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------- PROJECT BOX ---------------- -->
+
+      <section class="section" id="projects">
+        <div class="top-header">
+          <h1>Projects</h1>
+        </div>
+        <div class="con ">
+          <div class="tabs">
+            <h3 class="active h3">Project 1</h3>
+            <h3 class="h3">Project 2</h3>
+            <h3 class="h3">Project 3</h3>
+            <h3 class="h3">Project 4</h3>
+            <h3 class="h3">Project 5</h3>
+          </div>
+          <div class="tab-content">
+            <div class="active">
+              <h4>E-Learning Platform (Educa)</h4>
+              <img class="project_img" src="assets/images/project1.1.png"><br><br><br><br>
+              <img class="project_img" src="assets/images/project1.2.png"><br><br><br><br>
+              <img class="project_img" src="assets/images/project1.3.png">
+              <p><br>
+                <strong>
+                  <p>Project Description: Educa</p>
+                </strong>
+
+                Educa is an educational platform designed to enhance the learning experience for students and streamline
+                content management for developers and tutors. The platform provides a comprehensive environment for
+                accessing and managing educational resources, coding exercises, and interaction between students and
+                teachers. Below are the key features and functionalities depicted in the provided images.<br><br>
+                <strong>
+                  <p>Features:</p>
+                </strong>
+              <ol>
+                <li>
+                  <p>Student Dashboard:</p>
+                </li>
+              </ol>
+              <ul>
+                <li>
+                  <p>Profile Section: Displays the student's profile information.</p>
+                </li>
+                <li>
+                  <p>Navigation Menu: Easy access to various sections such as Home, Courses, IDE/Compiler, Teachers,
+                    About Us, and Contact Us.</p>
+                </li>
+                Quick Options:
+                <li>
+                  <p>View likes and comments on their activities.</p>
+                </li>
+                <li>
+                  <p>Access bookmarks and saved playlists.</p>
+                </li>
+                <li>
+                  <p>Popular Topics: Quick access buttons for topics like HTML, CSS, JavaScript, React, PHP, and
+                    Bootstrap.</p>
+                </li>
+                <li>
+                  <p>Become a Tutor: Option for students to register as tutors and contribute to the platform.</p>
+                </li>
+              </ul><br>
+
+
+
+              <strong>
+                <p>IDE/Compiler Interface:</p>
+              </strong>
+
+              <ul>
+                <li>
+                  <p>Code Editor: A dual-pane setup where the left pane allows users to write HTML code and the right
+                    pane displays the rendered output.</p>
+                </li>
+                <li>
+                  <p>Language Selection: Dropdown menu for selecting different programming languages.</p>
+                </li>
+                <li>
+                  <p>Run Button: Execute code to see real-time output.</p>
+                </li>
+              </ul><br>
+
+
+
+              <strong>
+                <p>Admin Dashboard:</p>
+              </strong>
+
+              <ul>
+                <li>
+                  <p>Profile Section: Displays the developer's profile information.</p>
+                </li>
+                <li>
+                  <p>Navigation Menu: Easy access to sections like Home, Playlists, Contents, Comments, and Logout.</p>
+                </li>
+                <li>
+                  <p>
+                    Dashboard Widgets:
+                  <ul>
+                    <li>
+                      <p>Welcome message with profile access.</p>
+                    </li>
+                    <li>
+                      <p>Options to add new content and playlists.</p>
+                    </li>
+                    <li>
+                      <p>Metrics showing total contents, playlists, likes, and comments.</p>
+                    </li>
+                    <li>
+                      <p>Quick select buttons for login and registration.</p>
+                    </li>
+                  </ul>
+                  </p>
+                </li>
+              </ul><br>
+
+
+              <strong>
+                <p>Usage:</p>
+              </strong>
+
+              <ul>
+                <li>
+                  <p>For Students: Educa provides a structured learning environment where they can explore various
+                    topics, practice coding, and engage with course materials. The quick options and navigation menu
+                    ensure seamless access to the resources they need.</p>
+                </li>
+                <li>
+                  <p>For Developers and Tutors: The admin dashboard offers tools for content creation and management,
+                    making it easy to add new educational resources, monitor engagement, and interact with students.</p>
+                </li>
+              </ul><br>
+
+
+              <strong>
+                <p>Conclusion</p>
+              </strong>
+              Educa is a versatile platform aimed at fostering an engaging and interactive learning experience. By
+              integrating features for both students and educators, it ensures a balanced and effective educational
+              environment. The intuitive UI/UX design further enhances usability, making it a valuable tool for both
+              teaching and learning.
+              </p>
+            </div>
+
+            <div>
+              <h4>Dynamic Certificate Generator</h4>
+              <img class="project_img" src="assets/images/project2.1.png"><br><br><br><br>
+              <img class="project_img" src="assets/images/project2.2.png"><br><br><br><br>
+              <img class="project_img" src="assets/images/project2.3.png"><br><br><br><br>
+              <img class="project_img" src="assets/images/project2.4.png">
+              <p><br>
+                <strong>
+                  <p>Dynamic Certificate Generator Project Description</p>
+                </strong><br>
+                The "Dynamic Certificate Generator" is a web-based application designed to simplify the process of
+                creating personalized certificates. This project leverages various web technologies to provide a
+                seamless and user-friendly experience for generating custom certificates. Below is a detailed
+                description of the project's functionality and features, as depicted in the provided images.
+                <br><br>
+
+                <strong>
+                  <p>Home Page</p>
+                </strong>
+              <ul>
+                <li>
+                  <p>Welcome Message: The home page features a welcoming message, "Are you facing
+                    difficulties in creating certificates? We are here to help!" This sets the tone for the user,
+                    indicating that the application is designed to assist with certificate creation.</p>
+                </li>
+                <li>
+                  <p>Call to Action: A prominent "Create Certificate" button invites users to start the
+                    certificate creation process.</p>
+                </li>
+                <li>
+                  <p>Design Elements: The page includes a graphic of a certificate, enhancing the visual
+                    appeal and providing a clear indication of the site's purpose.</p>
+                </li>
+              </ul><br>
+
+              <strong>
+                <p>Certificate Creation Page
+              </strong>
+              <ul>
+                <li>
+                  <p>Name Input Field: Users are prompted to "Enter a name" into a text input field.
+                    This allows for the customization of certificates with the recipient's name.</p>
+                </li>
+                <li>
+                  <p>Optional Certificate ID: An option to "Include Certificate ID" is provided, which
+                    can add an extra layer of uniqueness and validation to the certificate.</p>
+                </li>
+                <li>
+                  <p>Submit Button: A "Create Certificate" button enables users to generate the
+                    certificate once the necessary information has been entered.</p>
+                </li>
+              </ul><br>
+
+
+              <strong>
+                <p>Certificate Generation with Input</p>
+              </strong>
+              <ul>
+                <li>
+                  <p>User Input Example: The page shows an example where the name "Mohd Jishaan Azmi
+                    Yunus" has been entered. This demonstrates the dynamic aspect of the application, where the input
+                    directly affects the generated certificate.</p>
+                </li>
+                <li>
+                  <p>ID Checkbox: The checkbox for including the certificate ID is shown in an unchecked
+                    state, highlighting that this is an optional feature.</p>
+                </li>
+              </ul><br>
+
+              <strong>
+                <p>Generated Certificate</p>
+              </strong>
+              <ul>
+                <li>
+                  <p>Final Output: The final output is a dynamically generated certificate. The example shows a
+                    certificate awarded to "Jishaan Azmi" for completing a "Software Testing Tutorial" provided by
+                    "Great
+                    Learning Academy". The certificate includes:</p>
+                  <ol>
+                    <li>
+                      <p>The recipient's name</p>
+                    </li>
+                    <li>
+                      <p>The course title</p>
+                    </li>
+                    <li>
+                      <p>The provider's name</p>
+                    </li>
+                    <li>
+                      <p>The date of issuance</p>
+                    </li>
+                    <li>
+                      <p>An optional Certificate ID, adding authenticity to the certificate.</p>
+                    </li>
+                  </ol>
+                </li>
+
+              </ul><br>
+
+              <strong>
+                <p>Technologies Used</p>
+              </strong>
+              <ul>
+                <li>
+                  <p>Frontend: HTML, CSS, JavaScript</p>
+                </li>
+                <li>
+                  <p>Backend: PHP</p>
+                </li>
+                <li>
+                  <p>Database: SQL</p>
+                </li>
+                <li>
+                  <p>Library: fPDF (for PDF generation)</p>
+                </li>
+              </ul><br>
+
+              <strong>
+                <p>Key Features</p>
+              </strong>
+              <ul>
+                <li>
+                  <p>User-Friendly Interface: The application features a clean, intuitive interface, making it easy for
+                    users to create certificates.</p>
+                </li>
+                <li>
+                  <p>Dynamic Content: Users can input their own data, which is dynamically inserted into the certificate
+                    template.</p>
+                </li>
+                <li>
+                  <p>Optional Features: The inclusion of a Certificate ID is optional, allowing for customizable
+                    certificate details.</p>
+                </li>
+                <li>
+                  <p>Automated Generation: The backend handles the generation and formatting of certificates, ensuring a
+                    polished final product.</p>
+                </li>
+                <li>
+                  <p>This project demonstrates the capability to integrate various web technologies to create a
+                    practical
+                    and user-oriented application, providing a valuable tool for educational institutions, businesses,
+                    and
+                    other organizations that require customizable certificates.</p>
+                </li>
+              </ul><br>
+
+              </p>
+            </div>
+
+            <div>
+              <h4>Stock Seeker</h4>
+              <img class="project_img" src="assets/images/project3.1.png"><br><br><br><br>
+              <img class="project_img" src="assets/images/project3.2.png"><br><br><br><br>
+              <img class="project_img" src="assets/images/project3.3.png">
+              <p>
+                <strong>
+                  <p>Stock Seeker: Website Overview and Description</p>
+                </strong> <br>
+                Stock Seeker is a visually engaging and user-friendly stock photo website designed to provide users with
+                high-quality stock images quickly and efficiently. Below is an overview based on the provided images of
+                the website:<br><br>
+                <strong>
+                  <p>Homepage</p>
+                </strong>
+              <ul>
+                Header:
+                <li>
+                  <p>Logo: The logo "SS" for Stock Seeker is prominently displayed at the top left.</p>
+                </li>
+                <li>
+                  <p>Search Bar: A search bar allows users to quickly find specific images.</p>
+                </li>
+              </ul>
+              <ul>
+                Buttons:
+                <li>
+                  <p>Upload Image: Users can upload their images to the platform.</p>
+                </li>
+                <li>
+                  <p>Favorites: A heart icon for users to view their favorited images.</p>
+                </li>
+                <li>
+                  <p>Help: A question mark icon for help or FAQs.</p>
+                </li>
+                <li>
+                  <p>Connect: A "Connect With Us" button for user support or inquiries.</p>
+                </li>
+              </ul><br>
+              <strong>Main Banner:</strong>
+              <ul>
+                <li>
+                  <p>The main banner features the tagline: "GET YOUR DESIRED STOCK IMAGES WITH PREMIUM QUALITY IN SOME
+                    COUPLE OF CLICKS," emphasizing ease of use and high quality.</p>
+                </li>
+                <li>
+                  <p>An "Explore" button encourages users to dive into the gallery.</p>
+                </li>
+              </ul><br>
+              <strong>
+                <p>Image Gallery</p>
+              </strong>
+              <ul>
+                Categories:
+                <li>
+                  <p>The website is organized into various categories, including Nature, Animals, Architecture, Food &
+                    Drink, Sports, Coding, Travel, and Arts & Culture. This categorization helps users find images
+                    relevant to their needs.</p>
+                </li>
+                <li>
+                  <p>Each category is displayed with a button, making it easy to navigate between them.</p>
+                </li>
+              </ul><br>
+
+
+              <strong>
+                <p>Image Thumbnails:</p>
+              </strong>
+              <ul>
+                <li>
+                  <p>The gallery showcases a variety of high-resolution image thumbnails. Each thumbnail is a preview
+                    that users can click to view the full image and details.</p>
+                </li>
+                <li>
+                  <p>Example categories displayed include travel scenes, cultural sites, natural landscapes, and more.
+                  </p>
+                </li>
+              </ul><br>
+
+              <strong>
+                <p>Image Detail Page</p>
+              </strong>
+
+
+              Photographer Profile:
+              <ul>
+                <li>
+                  <p>The detailed view of each image includes the photographer's name and a profile picture, adding a
+                    personal touch and recognizing the creator.</p>
+                </li>
+                <li>
+                  <p>The profile shows a verified badge indicating authenticity.</p>
+                </li>
+              </ul><br>
+
+              <strong>
+                <p>Image Details:</p>
+              </strong>
+
+
+              The details section provides comprehensive information about the image, including:
+
+              <ul>
+                <li>
+                  <p>Title: E.g., "David of Michelangelo."</p>
+                </li>
+                <li>
+                  <p>Category: E.g., Art & Culture.</p>
+                </li>
+                <li>
+                  <p>Photographer: E.g., Jishaan Azmi.</p>
+                </li>
+                <li>
+                  <p>Publish Date: E.g., 22 August 2019.</p>
+                </li>
+                <li>
+                  <p>Camera Used: E.g., Canon EOS 1200D.</p>
+                </li>
+                <li>
+                  <p>Views and Downloads: Metrics showing the popularity of the image.</p>
+                </li>
+              </ul>
+
+              A "Download" button allows users to download the image directly.<br><br>
+
+              <strong>
+                <p>Overall Description</p>
+              </strong>
+
+              Stock Seeker is a well-structured platform for both photographers and users seeking premium stock images.
+              It supports a seamless user experience through its intuitive navigation, detailed image descriptions, and
+              a clear, minimalist design that highlights the visual content. The site encourages community engagement by
+              allowing users to upload their images and interact with other photographers. Whether you need images for
+              professional use or personal projects, Stock Seeker provides a vast and diverse collection to meet your
+              needs.
+              </p>
+            </div>
+
+            <div>
+              <h4>Fourth Title</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                explicabo cum dolores hic possimus aut corrupti quisquam aperiam
+                quia veniam inventore officiis nam error sunt libero, commodi
+                architecto reiciendis qui fuga, itaque delectus quidem sequi.
+                Impedit natus culpa nihil aperiam adipisci aliquam error, suscipit
+                odio? Error sed esse perspiciatis quasi velit, ratione odit
+                architecto? Explicabo pariatur, laborum accusantium inventore cum
+                facere voluptate, illum vero neque, quam ratione vitae minima iusto.
+                Laboriosam placeat quidem excepturi voluptates ea voluptas et
+                possimus quam, dolorum ex? Porro a fuga quaerat! Soluta laborum
+                provident, aspernatur odit commodi non, rem dolorum debitis quam,
+                molestias asperiores neque.
+              </p>
+            </div>
+
+            <div>
+              <h4>Fifth Title</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                explicabo cum dolores hic possimus aut corrupti quisquam aperiam
+                quia veniam inventore officiis nam error sunt libero, commodi
+                architecto reiciendis qui fuga, itaque delectus quidem sequi.
+                Impedit natus culpa nihil aperiam adipisci aliquam error, suscipit
+                odio? Error sed esse perspiciatis quasi velit, ratione odit
+                architecto? Explicabo pariatur, laborum accusantium inventore cum
+                facere voluptate, illum vero neque, quam ratione vitae minima iusto.
+                Laboriosam placeat quidem excepturi voluptates ea voluptas et
+                possimus quam, dolorum ex? Porro a fuga quaerat! Soluta laborum
+                provident, aspernatur odit commodi non, rem dolorum debitis quam,
+                molestias asperiores neque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="project-container">
+           <div class="project-box">
+               <i class="uil uil-briefcase-alt"></i>
+               <h3>Completed</h3>
+               <label>15+ Finished Projects</label>
+           </div>
+           <div class="project-box">
+               <i class="uil uil-users-alt"></i>
+               <h3>Clients</h3>
+               <label>25+ Happy Clients</label>
+           </div>
+           <div class="project-box">
+               <i class="uil uil-award"></i>
+               <h3>Experience</h3>
+               <label>7+ Years in the field</label>
+           </div>
+         </div> -->
+      </section>
+      <br>
+
+      <!-- -------------- CONTACT BOX ---------------- -->
+
+      <section class="section" id="contact">
+        <div class="top-header">
+          <h1>Get in touch</h1>
+          <span>Do you have a project in your mind, contact me here</span>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="contact-info">
+              <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+              <p><i class="uil uil-envelope"></i> Email: 1241.co.mohdjishaanazmiyunus@gmail.com</p>
+              <p><i class="uil uil-phone"></i> Tel: +91 8104035311</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-control">
+              <div class="form-inputs">
+                <input type="text" class="input-field" placeholder="Name">
+                <input type="text" class="input-field" placeholder="Email">
+              </div>
+              <div class="text-area">
+                <textarea placeholder="Message"></textarea>
+              </div>
+              <div class="form-button">
+                <button class="btn">Send <i class="uil uil-message"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+      <div class="top-footer">
+        <p>Jishaan Azmi .</p>
+      </div>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list">
+            <a href="#home">Home</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social_icons">
+        <a href="https://www.instagram.com/zishan48__/" target="blank_">
+          <div class="icon"><i class="uil uil-instagram"></i></div>
+        </a>
+        <a href="https://www.linkedin.com/in/jishaan-azmi/" target="blank_">
+          <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCy-NtGgYWWdZsVgaB7vl_ag" target="blanck_">
+          <div class="icon"><i class="uil uil-youtube"></i></div>
+        </a>
+        <a href="https://github.com/zishanazmi/zishanazmi" target="blank_">
+          <div class="icon"><i class="uil uil-github-alt"></i></div>
+        </a>
+      </div>
+      <div class="bottom-footer">
+        <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Jishaan Azmi</a> - All rights reserved</p>
+      </div>
+    </footer>
+
+  </div>
+
+
+
+
+  <!-- ----- TYPING JS Link ----- -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- ----- SCROLL REVEAL JS Link----- -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- ----- MAIN JS ----- -->
+  <script src="assets/js/main.js"></script>
+
+  <script type="text/javascript">
+    let tabs = document.querySelectorAll(".tabs h3");
+    let tabContents = document.querySelectorAll(".tab-content div");
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => {
+        tabContents.forEach((content) => {
+          content.classList.remove("active");
+        });
+        tabs.forEach((tab) => {
+          tab.classList.remove("active");
+        });
+        tabContents[index].classList.add("active");
+        tabs[index].classList.add("active");
+      });
+    });
+
+  </script>
+</body>
+
+</html>
